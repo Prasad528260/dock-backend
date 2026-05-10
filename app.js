@@ -17,6 +17,6 @@ app.use('/trucks', truckRoutes);
 app.use('/docks', dockRoutes);
 app.use('/simulation', simulationRoutes);
 
-app.get('/health', (req, res) => res.json({ status: 'ok' }));
+app.get('/', (req, res) => res.json({ status: 'ok' }));
 
 export default app;
